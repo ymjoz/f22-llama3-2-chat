@@ -6,8 +6,8 @@ from utils2 import get_chat_response
 st.title('Hello llama3.2 😭, plus.v1')
 
 with st.sidebar:
-    api_key = st.text_input('API Key:', type='password')
-    st.markdown("[api key](https://platform.openai.com/account/api-keys)")
+    api_key = st.text_input('請輸入 API Key:', type='password')
+    st.markdown("[申請API KEY](https://platform.openai.com/account/api-keys)")
 
 if "memory" not in st.session_state:
     st.session_state["memory"] = ConversationBufferMemory(return_messages=True)
